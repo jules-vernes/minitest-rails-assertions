@@ -1,4 +1,4 @@
-require "minitest/rails/assertions/version"
+require 'minitest/rails/assertions/version'
 
 module Minitest
   module Rails
