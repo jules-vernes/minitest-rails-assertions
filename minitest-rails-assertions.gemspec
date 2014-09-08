@@ -1,23 +1,25 @@
-# coding: utf-8
+# encoding: utf-8
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+
 require 'minitest/rails/assertions/version'
 
-Gem::Specification.new do |spec|
-  spec.name          = "minitest-rails-assertions"
-  spec.version       = Minitest::Rails::Assertions::VERSION
-  spec.authors       = ["Geoffrey ROGUELON"]
-  spec.email         = ["groguelon@snapp.fr"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
-  spec.license       = "MIT"
+Gem::Specification.new do |gem|
+  gem.name          = 'minitest-rails-assertions'
+  gem.version       = Minitest::Rails::Assertions::VERSION
+  gem.authors       = ['Geoffrey Roguelon', 'Loïc Sence']
+  gem.email         = ['geoffrey.roguelon@gmail.com', 'senceloic@gmail.com']
+  gem.summary       = %q{The gem minitest-rails-assertions extends MiniTest to add some assertions to Rails tests.}
+  gem.description   = %q{The gem minitest-rails-assertions extends MiniTest to add some assertions to Rails tests.}
+  gem.homepage      = 'https://github.com/jules-vernes/minitest-rails-assertions'
+  gem.license       = 'MIT'
 
-  spec.files         = `git ls-files -z`.split("\x0")
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
-  spec.require_paths = ["lib"]
+  gem.files         = `git ls-files`.split($/)
+  gem.executables   = gem.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
+  gem.require_paths = ['lib']
 
-  spec.add_development_dependency "bundler", "~> 1.7"
-  spec.add_development_dependency "rake", "~> 10.0"
+  gem.add_development_dependency 'bundler', '~> 1.7'
+  gem.add_development_dependency 'rake', '~> 10.0'
 end
