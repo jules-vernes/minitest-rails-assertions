@@ -1,6 +1,6 @@
 # Minitest::Rails::Assertions
 
-[![Gem Version](https://badge.fury.io/rb/minitest-rails-assertions.svg)](http://badge.fury.io/rb/minitest-rails-assertions) [![Build Status](https://travis-ci.org/jules-vernes/minitest-rails-assertions.svg)](https://travis-ci.org/jules-vernes/minitest-rails-assertions) [![Code Climate](https://codeclimate.com/github/jules-vernes/minitest-rails-assertions/badges/gpa.svg)](https://codeclimate.com/github/jules-vernes/minitest-rails-assertions)
+[![Gem Version](https://badge.fury.io/rb/minitest-rails-assertions.svg)](http://badge.fury.io/rb/minitest-rails-assertions) [![Build Status](https://travis-ci.org/jules-vernes/minitest-rails-assertions.svg)](https://travis-ci.org/jules-vernes/minitest-rails-assertions) [![Code Climate](https://codeclimate.com/github/jules-vernes/minitest-rails-assertions/badges/gpa.svg)](https://codeclimate.com/github/jules-vernes/minitest-rails-assertions) [![Test Coverage](https://codeclimate.com/github/jules-vernes/minitest-rails-assertions/badges/coverage.svg)](https://codeclimate.com/github/jules-vernes/minitest-rails-assertions)
 
 TODO: Write a gem description
 
