@@ -6,6 +6,8 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'minitest/rails/assertions/version'
 
 Gem::Specification.new do |gem|
+  gem.required_ruby_version = '>= 1.9.3'
+
   gem.name          = 'minitest-rails-assertions'
   gem.version       = Minitest::Rails::Assertions::VERSION
   gem.authors       = ['Geoffrey Roguelon', 'Loïc Sence']
