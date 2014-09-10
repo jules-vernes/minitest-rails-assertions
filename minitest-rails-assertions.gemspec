@@ -26,4 +26,5 @@ Gem::Specification.new do |gem|
 
   gem.add_development_dependency 'bundler', '~> 1.7'
   gem.add_development_dependency 'rake', '~> 10.0'
+  gem.add_development_dependency 'activerecord-nulldb-adapter', '~> 0.3.1'
 end
