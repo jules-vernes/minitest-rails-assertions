@@ -9,6 +9,7 @@ require 'minitest/autorun'
 require 'minitest/pride'
 
 require 'schema'
+require 'models/category'
 require 'models/product'
 
 class Minitest::Test
