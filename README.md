@@ -2,7 +2,8 @@
 
 [![Gem Version](https://badge.fury.io/rb/minitest-rails-assertions.svg)](http://badge.fury.io/rb/minitest-rails-assertions) [![Build Status](https://travis-ci.org/jules-vernes/minitest-rails-assertions.svg)](https://travis-ci.org/jules-vernes/minitest-rails-assertions) [![Code Climate](https://codeclimate.com/github/jules-vernes/minitest-rails-assertions/badges/gpa.svg)](https://codeclimate.com/github/jules-vernes/minitest-rails-assertions) [![Test Coverage](https://codeclimate.com/github/jules-vernes/minitest-rails-assertions/badges/coverage.svg)](https://codeclimate.com/github/jules-vernes/minitest-rails-assertions)
 
-The gem minitest-rails-assertions extends MiniTest to add some assertions to Rails tests.
+The gem minitest-rails-assertions extends MiniTest to add some assertions for
+Rails specific methods.
 
 ## Installation
 
@@ -22,7 +23,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add in your `test_helper.rb`:
+
+```ruby
+require 'minitest/rails/assertions'
+```
+
+Use the assertions like the Minitest assertion. For instance:
+
+```ruby
+assert_length_of Product, :name, maximum: 30
+assert_validates Product, :reference, format: { with: /\A\w\d{9}\z/i }, uniqueness: true
+```
 
 ## Contributing
 
