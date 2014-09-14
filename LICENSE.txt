@@ -1,4 +1,4 @@
-Copyright (c) 2014 Geoffrey ROGUELON
+Copyright (c) 2014 Geoffrey Roguelon & Loïc Sence
 
 MIT License
 
